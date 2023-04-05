@@ -264,17 +264,6 @@ section .option_list .option:last-child{
     pointer-events: none;
 }
 
-.option_list .option .icon.tick{
-    color: #23903c;
-    border-color: #23903c;
-    background-color: #d4edda;
-}
-
-.option_list .option .icon.cross{
-    color: #a42834;
-    border-color: #f8d7da;
-    background: #a42834;
-}
 
 .option_list .option.correct{
     color: #23903c;
@@ -307,6 +296,7 @@ section .option_list .option:last-child{
 }
 
 footer .total_que span p{
+    color: black;
     font-weight: 500;
     padding: 0 5px;
 }
@@ -369,6 +359,7 @@ footer .next_btn:hover{
 }
 
 .score_text span p{
+    color: black;
     font-weight: 600;
     padding: 0 4px;
 }
@@ -399,6 +390,7 @@ footer #next_b{
 }
 
 #quiz-footer{
+    color: black;
     position: relative;
     z-index: 99;
     height: 70px;

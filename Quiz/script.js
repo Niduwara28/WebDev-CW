@@ -43,28 +43,8 @@ let userScore = 0;
 const next_btn = quiz_box.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_box = result_box.querySelector(".buttons .quit");
 
-//restarting the quiz box
-restart_quiz.onclick = () =>{
-    result_box.classList.remove("activeResult");
-    quiz_box.classList.add("activeQuiz");
-    let que_count = 0;
-    let que_numb = 1;
-    let timeValue = 15;
-    let widthValue = 0;
-    let userScore = 0;
-    showQuestion(que_count);
-    queCounter(que_numb);
-    clearInterval(counter);
-    startTimer(timeValue);
-    clearInterval(counterLine);
-    startTimerLine(widthValue);
-    next_btn.style.display = "none";
-    timeOff.textContent = "Time Left";
-}
-
-quit_box.onclick = () =>{
+result_box.onclick = () =>{
     window.location.reload();
 }
 
